@@ -14,7 +14,7 @@ $(function () {
     'EURES': 1,
     'Operations': 2,
     'People & Organisation': 3,
-    'Legal and Regulatory Affairs &amp; Data Protection': 4,
+    'Legal and Regulatory Affairs & Data Protection': 4,
     'Corporate Services': 5,
     'AI Solutions': 6,
     'Independent mandated functions': 7
