@@ -13,7 +13,7 @@ $(function () {
   const categoryOrder = {
     'EURES': 1,
     'Operations': 2,
-    'Human Resources': 3,
+    'People & Organisation': 3,
     'Legal and Regulatory Affairs & Data Protection': 4,
     'Corporate Services': 5,
     'AI solutions': 6,
