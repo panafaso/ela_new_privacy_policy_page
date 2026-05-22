@@ -13,7 +13,7 @@ $(function () {
   const categoryOrder = {
     'EURES': 1,
     'Operations': 2,
-    'People & Organisation': 3,
+    'Human Resources': 3,
     'Legal and Regulatory Affairs': 4,
     'Corporate Services': 5,
     'AI Solutions': 6,
@@ -93,8 +93,8 @@ startRender: function (rows, group) {
     "Legal and Regulatory Affairs":
       "Legal and Regulatory Affairs & Data Protection includes activities related to legal support, governance and compliance.",
 
-    "People & Organisation":
-      "People and Organisation includes activities related to human resources management, organisational development and staff support.",
+    "Human Resources":
+      "Human Resources includes activities related to human resources management, organisational development and staff support.",
 
     "AI Solutions":
       "AI Solutions includes activities involving artificial intelligence tools and systems used in ELA activities.",
