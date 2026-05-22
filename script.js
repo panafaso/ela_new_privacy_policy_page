@@ -77,17 +77,60 @@ $(function () {
 
       dataSrc: groupColumn,
 
-      startRender: function (rows, group) {
+startRender: function (rows, group) {
 
-        return $('<tr/>')
-          .append(
-            '<td colspan="4">' + group + '</td>'
-          );
-      }
-    }
-  });
+  const descriptions = {
 
-  /*
+    "EURES":
+      "EURES includes activities related to labour mobility, free movement of workers and access to EURES employment services across the EU.",
+
+    "Operations":
+      "Operations includes activities related to Operational Coordination and Liaison, Enforcement and Analysis activities, Cooperation Support and Information related activities.",
+
+    "Corporate Services":
+      "Corporate Services includes operations in the fields of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
+
+    "Legal and Regulatory Affairs & Data Protection":
+      "Legal and Regulatory Affairs & Data Protection includes activities related to legal support, governance, compliance and data protection.",
+
+    "People and Organisation":
+      "People and Organisation includes activities related to human resources management, organisational development and staff support.",
+
+    "AI Solutions":
+      "AI Solutions includes activities involving artificial intelligence tools and systems used in ELA activities.",
+
+    "Specific mandated functions":
+      "Specific mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
+  };
+
+  const description = descriptions[group] || '';
+
+  return $(`
+    <tr class="category-row">
+      <td colspan="4">
+
+        <div class="category-header">
+
+          <span class="category-title">
+            ${group}
+          </span>
+
+          <div class="info-wrap">
+
+            <span class="info-icon">i</span>
+
+            <div class="info-tooltip">
+              ${description}
+            </div>
+
+          </div>
+
+        </div>
+
+      </td>
+    </tr>
+  `);
+}
   =========================
   GROUP CLICK SORT
   =========================
