@@ -14,7 +14,7 @@ $(function () {
     'EURES': 1,
     'Operations': 2,
     'People & Organisation': 3,
-    'Legal and Regulatory Affairs & Data Protection': 4,
+    'Legal and Regulatory Affairs': 4,
     'Corporate Services': 5,
     'AI Solutions': 6,
     'Independent mandated functions': 7
@@ -90,8 +90,8 @@ startRender: function (rows, group) {
     "Corporate Services":
       "Corporate Services includes operations in the fields of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
 
-    "Legal and Regulatory Affairs &amp; Data Protection":
-      "Legal and Regulatory Affairs & Data Protection includes activities related to legal support, governance, compliance and data protection.",
+    "Legal and Regulatory Affairs":
+      "Legal and Regulatory Affairs & Data Protection includes activities related to legal support, governance and compliance.",
 
     "People & Organisation":
       "People and Organisation includes activities related to human resources management, organisational development and staff support.",
