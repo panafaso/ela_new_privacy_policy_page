@@ -93,14 +93,14 @@ startRender: function (rows, group) {
     "Legal and Regulatory Affairs & Data Protection":
       "Legal and Regulatory Affairs & Data Protection includes activities related to legal support, governance, compliance and data protection.",
 
-    "People and Organisation":
+    "People & Organisation":
       "People and Organisation includes activities related to human resources management, organisational development and staff support.",
 
     "AI Solutions":
       "AI Solutions includes activities involving artificial intelligence tools and systems used in ELA activities.",
 
-    "Specific mandated functions":
-      "Specific mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
+    "Independent mandated functions":
+      "Independent mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
   };
 
   const description = descriptions[group] || '';
@@ -131,6 +131,11 @@ startRender: function (rows, group) {
     </tr>
   `);
 }
+
+    }
+  });
+
+  /*
   =========================
   GROUP CLICK SORT
   =========================
