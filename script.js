@@ -16,7 +16,7 @@ $(function () {
     'People & Organisation': 3,
     'Legal and Regulatory Affairs & Data Protection': 4,
     'Corporate Services': 5,
-    'AI solutions': 6,
+    'AI Solutions': 6,
     'Independent mandated functions': 7
   };
 
