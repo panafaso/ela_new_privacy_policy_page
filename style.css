@@ -527,3 +527,74 @@ table.dataTable tbody tr:last-child td:last-child{
   display:block;
   padding-top: 24px !important;
 }
+
+.category-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.category-title{
+  font-weight:700;
+  color:#0b1f4a;
+}
+
+.info-wrap{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+}
+
+.info-icon{
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#0b1f4a;
+  color:#fff;
+  font-size:11px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.2s ease;
+  opacity:.82;
+}
+
+.info-icon:hover{
+  opacity:1;
+  transform:scale(1.06);
+}
+
+.info-tooltip{
+  position:absolute;
+  left:24px;
+  top:50%;
+  transform:translateY(-50%);
+  width:340px;
+
+  background:#f8fbff;
+  color:#24324a;
+
+  border:1px solid #c9d8ea;
+  border-radius:12px;
+
+  padding:12px 14px;
+
+  font-size:12px;
+  line-height:1.55;
+
+  box-shadow:0 10px 24px rgba(11,31,74,.12);
+
+  opacity:0;
+  visibility:hidden;
+
+  transition:.18s ease;
+
+  z-index:999;
+}
+
+.info-wrap:hover .info-tooltip{
+  opacity:1;
+  visibility:visible;
+}
