@@ -141,29 +141,6 @@ startRender: function (rows, group) {
   =========================
   */
 
-  $('#registerTable tbody').on('click', 'tr.dtrg-group', function () {
-
-    const currentOrder = table.order();
-
-    if (
-      currentOrder.length &&
-      currentOrder[0][0] === groupColumn &&
-      currentOrder[0][1] === 'asc'
-    ) {
-
-      table.order([
-        [groupColumn, 'desc'],
-        [0, 'asc']
-      ]).draw();
-
-    } else {
-
-      table.order([
-        [groupColumn, 'asc'],
-        [0, 'asc']
-      ]).draw();
-    }
-  });
 
   /*
   =========================
