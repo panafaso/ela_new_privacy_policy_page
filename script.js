@@ -49,29 +49,29 @@ $(function () {
       [0, 'asc']
     ],
 
-    columnDefs: [
+columnDefs: [
 
-      {
-        targets: groupColumn,
-        visible: false,
-        orderable: true,
-        searchable: false,
-        orderDataType: 'category-order'
-      },
+  {
+    targets: groupColumn,
+    visible: false,
+    orderable: true,
+    searchable: false,
+    orderDataType: 'category-order'
+  },
 
-      {
-        targets: [1, 2, 3],
-        orderable: false,
-        searchable: false
-      },
+  {
+    targets: [2],
+    orderable: false,
+    searchable: false
+  },
 
-      {
-        targets: [0],
-        orderable: true,
-        searchable: true
-      }
+  {
+    targets: [0, 1, 3],
+    orderable: true,
+    searchable: true
+  }
 
-    ],
+],
 
     rowGroup: {
 
