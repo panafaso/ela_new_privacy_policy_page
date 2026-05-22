@@ -60,13 +60,13 @@ columnDefs: [
   },
 
   {
-    targets: [2],
+    targets: [2, 3],
     orderable: false,
     searchable: false
   },
 
   {
-    targets: [0, 1, 3],
+    targets: [0, 1],
     orderable: true,
     searchable: true
   }
