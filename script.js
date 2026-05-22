@@ -17,7 +17,7 @@ $(function () {
     'Legal and Regulatory Affairs & Data Protection': 4,
     'Corporate Services': 5,
     'AI solutions': 6,
-    'Independent Mandated Functions': 7
+    'Independent mandated Functions': 7
   };
 
   $.fn.dataTable.ext.order['category-order'] = function (settings, col) {
