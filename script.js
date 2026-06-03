@@ -98,20 +98,19 @@ rowGroup: {
     ].includes(group);
 
     const descriptions = {
+      "Operations":
+        "Operations includes activities related to Operational Coordination and Liaison, Enforcement and Analysis activities, Cooperation Support and Information related activities.",
 
-    "Operations":
-      "Operations includes activities related to Operational Coordination and Liaison, Enforcement and Analysis activities, Cooperation Support and Information related activities.",
+      "Corporate Services":
+        "Corporate Services includes operations in the fields of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
 
-    "Corporate Services":
-      "Corporate Services includes operations in the fields of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
+      "Independent mandated functions":
+        "Independent mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
+    };
 
-    "Independent mandated functions":
-      "Independent mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
-  };
+    const description = descriptions[group] || '';
 
-  const description = descriptions[group] || '';
-
-  return $(`
+    return $(`
       <tr class="category-row">
         <td colspan="4">
 
@@ -124,7 +123,6 @@ rowGroup: {
             ${showInfoIcon ? `
               <div class="info-wrap">
                 <span class="info-icon">i</span>
-
                 <div class="info-tooltip">
                   ${description}
                 </div>
@@ -138,10 +136,9 @@ rowGroup: {
     `);
   }
 
-}
+} // τέλος rowGroup
 
-    }
-  });
+}); // τέλος DataTable
 
   /*
   =========================
