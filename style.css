@@ -433,7 +433,6 @@ a:hover{
   color:blue;
 }
 
-/* responsive */
 @media (max-width: 900px){
   .contacts-grid{
     grid-template-columns:1fr;
