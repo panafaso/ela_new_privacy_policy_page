@@ -45,9 +45,9 @@ lengthMenu: [
 ],
 
     order: [
-      [groupColumn, 'asc'],
-      [0, 'asc']
-    ],
+  [groupColumn, 'asc'],
+  [1, 'asc']
+],
 
 columnDefs: [
 
@@ -60,23 +60,30 @@ columnDefs: [
   },
 
   {
-    targets: [2, 3],
-    orderable: false,
-    searchable: false
-  },
+{
+  targets: 0,
+  orderable: false,
+  searchable: true
+},
 
-  {
-    targets: [0, 1],
-    orderable: true,
-    searchable: true
-  }
+{
+  targets: 1,
+  orderable: true,
+  searchable: true
+}
 
 ],
 
     rowGroup: {
 
       dataSrc: groupColumn,
-
+      
+const showInfoIcon = [
+  'Operations',
+  'Corporate Services',
+  'Independent mandated functions'
+].includes(group);
+  
 startRender: function (rows, group) {
 
   const descriptions = {
