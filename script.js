@@ -46,7 +46,7 @@ lengthMenu: [
 
     order: [
   [groupColumn, 'asc'],
-  [1, 'asc']
+  [0, 'asc']
 ],
 
 columnDefs: [
