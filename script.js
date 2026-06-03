@@ -61,13 +61,13 @@ columnDefs: [
 
   {
     targets: 0,
-    orderable: false,
+    orderable: true,
     searchable: true
   },
 
   {
     targets: 1,
-    orderable: true,
+    orderable: false,
     searchable: true
   },
 
