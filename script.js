@@ -37,12 +37,12 @@ $(function () {
 
   const table = $('#registerTable').DataTable({
 
-    pageLength: 50,
+    pageLength: 100,
 
-    lengthMenu: [
-      [50, 100],
-      [50, 100]
-    ],
+lengthMenu: [
+  [100],
+  [100]
+],
 
     order: [
       [groupColumn, 'asc'],
