@@ -99,13 +99,13 @@ rowGroup: {
 
     const descriptions = {
       "Operations":
-        "Operations includes activities related to Operational Coordination and Liaison, Enforcement and Analysis activities, Cooperation Support and Information related activities.",
+        "Operations includes activities related to Coordination and Liaison, Enforcement and Analysis, Cooperation Support, and Information-Communication services",
 
       "Corporate Services":
-        "Corporate Services includes operations in the fields of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
+        "Corporate Services includes operations in the sectors of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
 
       "Independent mandated functions":
-        "Independent mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
+        "Independent mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accountant activities."
     };
 
     const description = descriptions[group] || '';
