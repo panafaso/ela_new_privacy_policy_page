@@ -60,17 +60,28 @@ columnDefs: [
   },
 
   {
-{
-  targets: 0,
-  orderable: false,
-  searchable: true
-},
+    targets: 0,
+    orderable: false,
+    searchable: true
+  },
 
-{
-  targets: 1,
-  orderable: true,
-  searchable: true
-}
+  {
+    targets: 1,
+    orderable: true,
+    searchable: true
+  },
+
+  {
+    targets: 2,
+    orderable: false,
+    searchable: false
+  },
+
+  {
+    targets: 3,
+    orderable: false,
+    searchable: true
+  }
 
 ],
 
