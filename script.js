@@ -85,37 +85,25 @@ columnDefs: [
 
 ],
 
-    rowGroup: {
+rowGroup: {
 
-      dataSrc: groupColumn,
-      
-const showInfoIcon = [
-  'Operations',
-  'Corporate Services',
-  'Independent mandated functions'
-].includes(group);
-  
-startRender: function (rows, group) {
+  dataSrc: groupColumn,
 
-  const descriptions = {
+  startRender: function (rows, group) {
 
-    "EURES":
-      "EURES includes activities related to labour mobility, free movement of workers and access to EURES employment services across the EU.",
+    const showInfoIcon = [
+      'Operations',
+      'Corporate Services',
+      'Independent mandated functions'
+    ].includes(group);
+
+    const descriptions = {
 
     "Operations":
       "Operations includes activities related to Operational Coordination and Liaison, Enforcement and Analysis activities, Cooperation Support and Information related activities.",
 
     "Corporate Services":
       "Corporate Services includes operations in the fields of: i) Finance, Budget and Procurement, ii) Events and Facilities Management, and iii) ICT and Digitalisation Support.",
-
-    "Legal and Regulatory Affairs":
-      "Legal and Regulatory Affairs & Data Protection includes activities related to legal support, governance and compliance.",
-
-    "Human Resources":
-      "Human Resources includes activities related to human resources management, organisational development and staff support.",
-
-    "AI Solutions":
-      "AI Solutions includes activities involving artificial intelligence tools and systems used in ELA activities.",
 
     "Independent mandated functions":
       "Independent mandated functions includes activities related to independently mandated roles and functions within ELA, including the Executive Director, Spokesperson and Accounting activities."
@@ -124,30 +112,32 @@ startRender: function (rows, group) {
   const description = descriptions[group] || '';
 
   return $(`
-    <tr class="category-row">
-      <td colspan="4">
+      <tr class="category-row">
+        <td colspan="4">
 
-        <div class="category-header">
+          <div class="category-header">
 
-          <span class="category-title">
-            ${group}
-          </span>
+            <span class="category-title">
+              ${group}
+            </span>
 
-          <div class="info-wrap">
+            ${showInfoIcon ? `
+              <div class="info-wrap">
+                <span class="info-icon">i</span>
 
-            <span class="info-icon">i</span>
-
-            <div class="info-tooltip">
-              ${description}
-            </div>
+                <div class="info-tooltip">
+                  ${description}
+                </div>
+              </div>
+            ` : ''}
 
           </div>
 
-        </div>
+        </td>
+      </tr>
+    `);
+  }
 
-      </td>
-    </tr>
-  `);
 }
 
     }
