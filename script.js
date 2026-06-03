@@ -4,11 +4,6 @@ $(function () {
   const headerOffset = 110;
   const backBtn = document.getElementById('backToTop');
 
-  /*
-  =========================
-  CATEGORY ORDER
-  =========================
-  */
 
   const categoryOrder = {
     'EURES': 1,
@@ -29,11 +24,6 @@ $(function () {
       });
   };
 
-  /*
-  =========================
-  DATATABLE
-  =========================
-  */
 
   const table = $('#registerTable').DataTable({
 
@@ -136,22 +126,10 @@ rowGroup: {
     `);
   }
 
-} // τέλος rowGroup
+} 
 
-}); // τέλος DataTable
+}); 
 
-  /*
-  =========================
-  GROUP CLICK SORT
-  =========================
-  */
-
-
-  /*
-  =========================
-  TOC LINKS
-  =========================
-  */
 
   const tocLinks = Array.from(
     document.querySelectorAll('.toc-list a[href^="#"]')
@@ -183,11 +161,7 @@ rowGroup: {
     });
   }
 
-  /*
-  =========================
-  TOC CLICK
-  =========================
-  */
+
 
   tocLinks.forEach(a => {
 
@@ -217,11 +191,7 @@ rowGroup: {
     });
   });
 
-  /*
-  =========================
-  ACTIVE SECTION OBSERVER
-  =========================
-  */
+
 
   if (sections.length) {
 
@@ -253,11 +223,6 @@ rowGroup: {
     sections.forEach(sec => observer.observe(sec));
   }
 
-  /*
-  =========================
-  INITIAL ACTIVE TOC
-  =========================
-  */
 
   if (
     window.location.hash &&
@@ -273,11 +238,7 @@ rowGroup: {
     );
   }
 
-  /*
-  =========================
-  BACK TO TOP
-  =========================
-  */
+  
 
   if (backBtn) {
 
