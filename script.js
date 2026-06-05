@@ -10,7 +10,7 @@ $(function () {
     'Operations': 2,
     'Human Resources': 3,
     'Legal and Regulatory Affairs': 4,
-    'Data Protection': 5
+    'Data Protection': 5,
     'Corporate Services': 6,
     'AI Solutions': 7,
     'Independent mandated functions': 8
