@@ -10,9 +10,10 @@ $(function () {
     'Operations': 2,
     'Human Resources': 3,
     'Legal and Regulatory Affairs': 4,
-    'Corporate Services': 5,
-    'AI Solutions': 6,
-    'Independent mandated functions': 7
+    'Data Protection': 5
+    'Corporate Services': 6,
+    'AI Solutions': 7,
+    'Independent mandated functions': 8
   };
 
   $.fn.dataTable.ext.order['category-order'] = function (settings, col) {
