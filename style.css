@@ -309,7 +309,7 @@ h1{
 
 /* column sizing */
 .col-ref{ width:210px; }
-.col-act{ width:auto; }  /* Processing wider */
+.col-act{ width:auto; }  
 .col-rec{ width:160px; }
 .col-ps{ width:260px; }
 .col-cat{ width:0; }
@@ -399,10 +399,10 @@ h1{
 }
 
 .contact-card{
-background:#f8f9fb;              /* ✅ ΑΣΠΡΟ μέσα */
-  border:1px solid #d1d5db;        /* ίδιο γκρι περίγραμμα */
-  border-radius:18px;              /* λίγο πιο rounded */
-  padding:48px;                    /* πιο μεγάλο padding */
+background:#f8f9fb;         
+  border:1px solid #d1d5db;     
+  border-radius:18px;            
+  padding:48px;                  
   min-height:360px;
 }
 
